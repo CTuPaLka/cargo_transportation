@@ -1,2 +1,127 @@
 @import 'nullstyle-perfect.scss';
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap'); 
+
+body{
+	background: rgb(153,50,125);
+	background: linear-gradient(180deg, rgba(153,50,125,1) 0%, rgba(85,171,144,0.7176120448179272) 39%, rgba(0,255,76,1) 100%);
+}
+
+.container {
+	width: 86%;
+	margin: 0 auto;
+}
+.flex-row {
+	display: flex;
+
+}
+.btn {
+	display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: background-color 0.5s ease-in-out;
+}
+
+.btn:hover{
+	background: rgb(63,196,251);
+
+}
+
+.feedback {
+
+	&__body {
+		border: 1px solid black;
+		font-size: 1.5vw;
+		// height: 15vh;
+	}
+
+	&__slogan {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 2.3vw;
+		padding: 2vh 0 2vh 0;
+	}
+
+	&__content {
+		justify-content: space-between;
+		// padding: 0 0 5vh 0;
+		height: 12vh;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0 0 2vh;
+
+	}
+
+	&__logo img{
+		width: 90%;
+		height: 90%;
+	}
+
+	&__middle{
+		display: flex;
+		flex: 0 0 45%;
+		align-items: center;
+		// flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__city {
+	}
+
+	&__weekend {
+	}
+
+	&__btn-feedback {
+		flex: 0 0 30%;
+		display: flex;	
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__btn {
+		width: 80%;
+		height: 70%;
+		// border: 1px solid black;
+		font-size: 2vw;
+		font-weight: 700;
+		border-radius: 2vw;
+	}
+}
+
+.header {
+
+	&__body {
+		font-size: 2vw;
+		display: flex;
+		height: 10vh;
+		align-items: center;
+		justify-content: space-around;
+		margin: 5vh 7% 5vh 7%;
+
+	}
+
+	&__paragraph {
+		display: flex;
+		flex: 0 0 60%;
+		justify-content: space-between;
+	}
+
+	&__paragraph li{
+		cursor: pointer;
+		height: 3vh;
+	}
+
+	&__phone {
+		flex: 0 0 25%;
+		justify-content: end;
+		text-align: right;
+		cursor: pointer;
+
+	}
+}
+
+
